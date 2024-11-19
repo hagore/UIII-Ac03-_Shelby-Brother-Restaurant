@@ -1,0 +1,550 @@
+:root {
+    --font-family: 'Roboto', sans-serif; /* Cambiar fuente si es otra */
+    --primary-color: #654FE0; /* Color de los subtítulos */
+    --secondary-color: #333; /* Color del texto */
+    --background-primary: #FFFFFF;
+    ---color: #654FE0;
+    --number-color: #654FE0;
+    --number-bg-color: #FFFFFF;
+}
+* {
+    margin: 1px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-primary);
+    color: var(--secondary-color);
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+    background-color: var(--background-secondary);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__image {
+    width: 200px;
+    margin-right: 20px;
+}
+.header__title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: left;
+}
+
+.header__description {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    text-align: left;
+}
+/*2*/
+.section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+}
+.section__title_izquierda {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    text-align: left;
+    margin-bottom: 10px;
+}
+.section__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+.header__description {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    text-align: left;
+}
+.section__subtitle {
+    font-size: 1.5rem;
+    color: var(--primary-color); /* Cambiar a un color más específico si el PDF tiene otro */
+    margin-bottom: 10px;
+}
+
+.section__subtitle2 {
+    font-size: 1.2rem;
+    color: var(--secondary-color); /* Cambiar a un color más específico si el PDF tiene otro */
+    margin-bottom: 10px;
+}
+
+.section__text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--secondary-color);
+}
+.section__textx {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.section__subtitle00 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+/*3*/
+.section__container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permite que los elementos se reorganicen en pantallas pequeñas */
+    justify-content: flex-start;
+}
+
+
+.section__text-container {
+    flex: 1; /* Ocupa todo el espacio disponible si es necesario */
+    max-width: 60%; /* Controla el ancho del texto */
+
+}
+.section__row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.section__item {
+    flex: 1;
+    background-color: #F9F9F9; /* Fondo de cada bloque */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+.section__image-right {
+    flex-shrink: 0; /* Evita que la imagen se reduzca */
+    max-width: 35%; /* Controla el tamaño máximo relativo */
+    border-radius: 8px; /* Opcional, redondea las esquinas */
+    margin-left: auto; /* Empuja la imagen a la derecha */
+    align-self: flex-start; /* Asegura que la imagen esté alineada verticalmente */
+}
+/*4*/
+.header__Icono{
+    width: 10%;
+    margin-right: 20px;
+}
+/*5*/
+.section__image-top {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+/* Línea con números */
+.section__line-numbers {
+    position: relative; /* Permite posicionar elementos dentro de este contenedor */
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: space-between; /* Distribuye el espacio horizontalmente */
+    width: 100%; /* Abarca todo el ancho del contenedor */
+}
+
+.line-number-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los números y las flechas */
+    gap: 5px; /* Espacio entre el número y la flecha */
+}
+
+.line-number {
+background-color: #ddd;
+    border-radius: 0; /* Cambiado para cuadrados */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.arrow-down {
+    width: 3px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1); /* Línea vertical para la flecha */
+    margin-top: 5px; /* Espacio entre el número y la flecha */
+}
+.line {
+    flex-grow: 1; /* Se extiende completamente */
+    height: 2px; /* Altura visible */
+    background-color: rgba(0, 0, 0, 0.1); /* Color visible */
+    margin: 0 10px; /* Espaciado entre líneas */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Para depurar */
+}
+.section__content2 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/*6*/
+/* Estilos para las flechas con números */
+.section__container6 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px; /* Aumenta el espacio entre la sección de flechas y el texto */
+}
+
+.section__left6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alineación a la izquierda */
+    gap: 10px; /* Espacio entre las flechas */
+    margin-top: 8%; /* Agrega un margen superior para bajar las figuras */
+}
+
+
+.section__arrow-container6 {
+    position: relative;
+    width: 60px;
+    height: 120px;
+    background-color: #ECE9F1;
+    clip-path: polygon(50% 20%, 100% 0%, 100% 80%, 50% 100%, 0% 80%, 0% 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333;
+}
+.section__text6 {
+    /* font-size: 2rem; */
+    margin-bottom: 52px;
+    text-align: left; /* Alinea el título a la izquierda */
+}
+.section__text2 {
+    /* font-size: 2rem; */
+    margin: 10px;
+    text-align: left; /* Alinea el título a la izquierda */
+}
+
+.section__text-container6 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espaciado entre los bloques de texto */
+}
+
+.section__title6 {
+    font-size: 2rem;
+    color: #654FE0;
+    margin-bottom: 20px;
+    text-align: left; /* Alinea el título a la izquierda */
+}
+
+.section__image-right6 {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+    margin-left: 20px;
+}
+.section__image-right44 {
+    width: 450px;
+    height: auto;
+    object-fit: contain;
+    margin-left: 20px;
+}
+.section__image-right00 {
+    width: 320px;
+    height: auto;
+    object-fit: contain;
+    margin-left: 20px;
+}
+.section__container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.section__text-container2 {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+.section__button2 {
+    padding: 10px 20px;
+    background-color: #654FE0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.section__button2:hover {
+    background-color: #533cb0; /* Un tono más oscuro al pasar el cursor */
+}
+
+/* Estilo general */
+.seccion_beneficios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+  }
+  
+  .contenido_beneficios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  /* Título principal */
+  .titulo_beneficios {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4a3dbd;
+    grid-column: span 2;
+    margin-bottom: 20px;
+  }
+  
+  /* Lista de beneficios */
+  .lista_beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Beneficio individual */
+  .item_beneficio {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .numero_beneficio {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+  }
+  
+  .texto_item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: 333333;
+  }
+  
+  .texto_item p {
+    font-size: 1rem;
+    color: 333333;
+  }
+  
+  /* Imagen */
+  .imagen_beneficios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagen_beneficios img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos generales de la sección */
+.section-benefits {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #4a3dbd;
+    font-weight: bold;
+}
+
+/* Contenedor principal */
+.benefits-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Columnas */
+.benefits-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+
+}
+
+/* Elementos individuales */
+.benefit-item {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Número encerrado en un cuadrado */
+.benefit-number {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px; /* Cuadrado */
+}
+
+/* Texto */
+.benefit-text h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #4a3dbd;
+    font-weight: bold;
+}
+
+.benefit-text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Imagen */
+.benefits-image {
+    flex-shrink: 0;
+    width: 20%;
+    text-align: right;
+}
+
+.benefits-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+  
+    .header__content {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .header_contenedor_img {
+      width: 100%;
+      max-width: 320px;
+    }
+  
+    .quienes-somos {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 530px) {
+    :root {
+      --font_base: 16px;
+    }
+  
+    .wr {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: start;
+      margin: 0 60px;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
+    }
+  
+    .header {
+      margin: 20px auto;
+      padding: 4px 0;
+    }
+  
+    .header_contenedor_titulo2 {
+      text-align: center;
+    }
+  
+    .div__img {
+      margin: 0 110px;
+    }
+  
+    .quienes-somos {
+      font-size: var(12px) !important;
+      margin: 20px;
+      text-align: center;
+      padding: 1%;
+    }
+    .wr.sec {
+      background-color: lawngreen;
+      display: grid;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 200px 180px;
+      font-size: var(--font_base);
+      grid-template-columns: 35% 35%;
+    }
+    .wr__1 {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  
+    .wr__sec--1 {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  
+    .grid__1 {
+      width: 340px;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  
+    .menu {
+      justify-content: end;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  
+    .seccion_beneficios {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: end;
+    }
+  
+    .seccion_row {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+}
